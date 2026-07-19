@@ -1,0 +1,38 @@
+.guide-card {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.guide-card:hover {
+  transform: translateY(-8px);
+}
+
+.guide-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.guide-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.guide-content h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.guide-content p {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.guide-content span {
+  color: #008cff;
+  font-weight: bold;
+}
