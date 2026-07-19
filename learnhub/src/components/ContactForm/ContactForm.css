@@ -4,6 +4,12 @@ form{
     gap:15px;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 form input,
 form select,
 form textarea{
@@ -18,6 +24,45 @@ form textarea{
     min-height:120px;
 }
 
+.error-message {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-group label:first-child,
+.checkbox-group label:first-child {
+    font-weight: bold;
+    cursor: default;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
 form button{
     padding:12px;
     background:#2563eb;
@@ -25,8 +70,16 @@ form button{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    flex: 1;
 }
 
 form button:hover{
     background:#1d4ed8;
+}
+
+.success-message {
+    color: #16a34a;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
 }
