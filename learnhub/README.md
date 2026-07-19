@@ -1,16 +1,158 @@
-# React + Vite
+# LearnHub – Online Course Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LearnHub is a responsive React-based frontend prototype for an online learning platform. It allows users to browse courses, learn about the platform, and contact the team through an interactive form.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Home Page
+- Responsive Navbar with navigation links
+- Hero section with search bar
+- Explore Courses button
+- Feature cards rendered using `.map()`
+- Benefits section
+- Categories section
+- Testimonials section
+- Footer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Courses Page
+- Dynamic course cards
+- Search courses
+- FAQ accordion using `useState`
+- Course details including instructor, duration, rating, and price
 
-## Expanding the ESLint configuration
+### About Page
+- Mission and Vision
+- Team members rendered using `.map()`
+- Company timeline
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Contact Page
+- Controlled contact form
+- JavaScript validation
+- Success message after submission
+
+---
+
+## Technologies Used
+
+- React.js
+- React Router DOM
+- JavaScript (ES6)
+- CSS
+- HTML5
+
+---
+
+## React Concepts Used
+
+- Functional Components
+- useState
+- useEffect
+- React Router DOM
+- Props
+- Component-based Architecture
+- Conditional Rendering
+- Event Handling (`onClick`, `onChange`, `onSubmit`)
+- Dynamic Rendering using `.map()`
+
+---
+
+## Folder Structure
+
+```text
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── FeatureCard/
+│   ├── CourseCard/
+│   ├── CategoryCard/
+│   ├── BenefitCard/
+│   ├── TestimonialCard/
+│   ├── TeamCard/
+│   ├── FAQ/
+│   ├── ContactForm/
+│   └── Footer/
+│
+├── data/
+│   ├── courses.js
+│   ├── features.js
+│   ├── categories.js
+│   ├── testimonials.js
+│   ├── faq.js
+│   └── team.js
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Courses.jsx
+│   ├── About.jsx
+│   └── Contact.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone <repository-link>
+```
+
+Go to the project folder
+
+```bash
+cd LearnHub
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit
+
+```
+http://localhost:5173
+```
+
+---
+
+## Future Improvements
+
+- Login and Signup Popup
+- Course Enrollment Form
+- Responsive Enhancements
+- Better Course Images
+- Backend Integration
+- User Authentication
+
+---
+
+## Author
+
+**Dhruv**
+
+B.Tech CSE Student
+
+React Frontend Project
+
+---
+
+## License
+
+This project is created for educational and learning purposes only.
