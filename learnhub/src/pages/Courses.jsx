@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -10,7 +11,13 @@ import faq from "../data/faq";
 
 function Courses() {
 
-    const [search, setSearch] = useState("");
+    const location = useLocation();
+
+const params = new URLSearchParams(location.search);
+
+const initialSearch = params.get("search") || "";
+
+const [search, setSearch] = useState(initialSearch);
 
     const filteredCourses = courses.filter((course) =>
         course.title.toLowerCase().includes(search.toLowerCase())
