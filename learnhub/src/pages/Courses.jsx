@@ -5,19 +5,23 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import CourseCard from "../components/CourseCard/CourseCard";
 import FAQ from "../components/FAQ/FAQ";
+import PricingCard from "../components/PricingCard/PricingCard";
+import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 
 import courses from "../data/courses";
 import faq from "../data/faq";
+import pricing from "../data/pricing";
+import testimonials from "../data/testimonials";
 
 function Courses() {
 
     const location = useLocation();
 
-const params = new URLSearchParams(location.search);
+    const params = new URLSearchParams(location.search);
 
-const initialSearch = params.get("search") || "";
+    const initialSearch = params.get("search") || "";
 
-const [search, setSearch] = useState(initialSearch);
+    const [search, setSearch] = useState(initialSearch);
 
     const filteredCourses = courses.filter((course) =>
         course.title.toLowerCase().includes(search.toLowerCase())
@@ -31,7 +35,9 @@ const [search, setSearch] = useState(initialSearch);
 
             <section className="courses-page">
 
-                <h1>Our Courses</h1>
+                <h1>Explore Our Courses</h1>
+
+                <p className="courses-intro">Learn from industry experts with flexible online learning.</p>
 
                 <input
 
@@ -62,6 +68,40 @@ const [search, setSearch] = useState(initialSearch);
                         ))
 
                     }
+
+                </div>
+
+            </section>
+
+            <section className="pricing-section">
+
+                <h2>Our Pricing Plans</h2>
+
+                <p>Choose the perfect plan for your learning journey</p>
+
+                <div className="pricing-grid">
+
+                    {pricing.map((plan) => (
+
+                        <PricingCard key={plan.id} plan={plan} />
+
+                    ))}
+
+                </div>
+
+            </section>
+
+            <section className="testimonials-section">
+
+                <h2>What Our Students Say</h2>
+
+                <div className="testimonials-grid">
+
+                    {testimonials.map((testimonial) => (
+
+                        <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+
+                    ))}
 
                 </div>
 

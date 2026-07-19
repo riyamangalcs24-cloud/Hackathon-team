@@ -1,0 +1,143 @@
+.pricing-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: #2563eb;
+}
+
+.pricing-card.popular {
+  border-color: #2563eb;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  color: #1f2937;
+  margin: 15px 0 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.currency {
+  font-size: 20px;
+  color: #6b7280;
+}
+
+.amount {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.description {
+  color: #6b7280;
+  margin: 0;
+  font-size: 14px;
+}
+
+.features {
+  list-style: none;
+  padding: 20px 0;
+  margin: 20px 0;
+  text-align: left;
+  flex-grow: 1;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.features li {
+  padding: 10px 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.features li::before {
+  content: "✓ ";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.enroll-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.pricing-card.popular .enroll-btn {
+  background: #10b981;
+}
+
+.pricing-card.popular .enroll-btn:hover {
+  background: #059669;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    padding: 20px 15px;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+  }
+
+  .amount {
+    font-size: 36px;
+  }
+
+  .features {
+    padding: 15px 0;
+  }
+
+  .features li {
+    font-size: 13px;
+  }
+
+  .enroll-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

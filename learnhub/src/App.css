@@ -86,3 +86,67 @@
     border:none;
 
 }
+
+.courses-page h1,
+.courses-page .courses-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.courses-page .courses-intro {
+    color: #6b7280;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.pricing-section {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.pricing-section h2,
+.pricing-section p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pricing-section p {
+    color: #6b7280;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.testimonials-section {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .courses-page input {
+        width: 100%;
+    }
+
+    .pricing-grid,
+    .courses-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -21,6 +21,8 @@
 .nav-links a{
     color:#333;
     font-weight:500;
+    text-decoration:none;
+    transition:color 0.3s;
 }
 
 .nav-links a:hover,
@@ -34,4 +36,77 @@
     background:#2563eb;
     color:white;
     border-radius:5px;
+    cursor:pointer;
+    transition:all 0.3s;
+}
+
+.login-btn:hover {
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 18px 40px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 8px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
 }

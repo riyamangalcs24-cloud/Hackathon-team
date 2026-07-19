@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import FeatureCard from "../components/FeatureCard/FeatureCard";
@@ -14,6 +15,10 @@ import features from "../data/features";
 import courses from "../data/courses";
 
 function Home() {
+  useEffect(() => {
+    document.title = "LearnHub";
+  }, []);
+
   return (
     <>
       <Navbar />
