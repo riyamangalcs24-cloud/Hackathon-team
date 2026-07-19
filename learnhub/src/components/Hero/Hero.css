@@ -1,0 +1,51 @@
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px;
+    background:#eef4ff;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:50px;
+    color:#222;
+}
+
+.hero-left p{
+    margin:20px 0;
+    color:#555;
+}
+
+.search-box{
+    display:flex;
+    margin:20px 0;
+}
+
+.search-box input{
+    width:300px;
+    padding:12px;
+    border:1px solid #ccc;
+}
+
+.search-box button{
+    padding:12px 20px;
+    border:none;
+    background:#2563eb;
+    color:white;
+}
+
+.explore-btn{
+    padding:12px 25px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:5px;
+}
+
+.hero-right img{
+    width:400px;
+}
